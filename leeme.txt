@@ -1,0 +1,9 @@
+es una pagina sencilla que cuenta con opciones para agregar productos asignandole un precio 
+y cantidad de stock.
+tiene una seccion para eliminar productos de stock con un autocompletado de jquery.
+se usa json ajax dom arrays y todo lo solicitado.
+si bien estoy entregando tuve errores, varios.
+por ejemplo no poder ocultar el catalogo con el boton de mostrarlo
+espero poder seguir mejorando ya que no me parecio facil.
+muchas gracias.
+quite todos los onclick como se me pidio

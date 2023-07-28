@@ -1,0 +1,93 @@
+
+h1 {
+    color: #007bff;
+  }
+  
+  /* Estilos para el formulario agregar */
+  .formulario-agregar {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el formulario eliminar */
+  .formulario-eliminar {
+    border: 1px solid #dc3545;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para la sección de búsqueda */
+  .busqueda {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el botón de búsqueda */
+  .busqueda button {
+    margin-top: 10px;
+  }
+  
+  /* Estilos para el catálogo */
+  .catalogo {
+    display: none;
+    margin-bottom: 20px;
+  }
+  
+/* Estilos para el carrito */
+.carrito {
+  max-width: 300px; 
+  margin: auto;
+  padding: auto;
+  border: 3px solid #ccc;
+  text-align: center;
+}
+/* Estilos para la lista de productos en el carrito */
+.carrito #lista-carrito {
+  max-height: 200px; 
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+/* Estilos para el botón de confirmar compra */
+.carrito #confirmarCompraBtn {
+  font-size: 14px;
+}
+
+
+  /* Estilos para el botón de mostrar catálogo */
+  #mostrarCatalogoBtn {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Estilos para cada producto en el catálogo */
+  .producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .producto img {
+    max-width: 100%;
+  }
+  
+  /* Estilo para resaltar el producto al pasar el mouse */
+  .producto:hover {
+    transform: scale(1.05);
+  }
+  .catalogo .producto {
+    max-width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos para las imágenes de los productos */
+  .catalogo .producto img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+  }

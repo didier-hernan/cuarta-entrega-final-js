@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "nombre": "Fender Stratocaster",
+    "precio": 200,
+    "stock": 10,
+    "imagen": "fender.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Gibson",
+    "precio": 300,
+    "stock": 5,
+    "imagen": "gibson.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Ibanez",
+    "precio": 150,
+    "stock": 8,
+    "imagen": "ibanez.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Jackson",
+    "precio": 150,
+    "stock": 8,
+    "imagen": "jackson.png"
+  }
+ ]
+

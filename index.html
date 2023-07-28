@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Tienda de Productos</h1>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="formulario-agregar">
+                    <h2>Agregar Producto al Stock</h2>
+                    <form id="formularioAgregar" onsubmit="agregarStock(event)">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre del Producto:</label>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="precio" class="form-label">Precio:</label>
+                            <input type="number" id="precio" class="form-control" step="0.01" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="stock" class="form-label">Stock:</label>
+                            <input type="number" id="stock" class="form-control" required>
+                        </div>
+                        <button type="submit" id="agregarStockBtn" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="formulario-eliminar">
+                    <h2>Eliminar Producto del Stock</h2>
+                    <form id="formularioEliminar" onsubmit="eliminarStock(event)">
+                        <div class="mb-3">
+                            <label for="nombreEliminar" class="form-label">Nombre del Producto:</label>
+                            <input type="text" id="nombreEliminar" class="form-control" required>
+                            <ul id="autocompleteList" class="autocomplete-list"></ul>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="busqueda mb-4">
+            <label for="busqueda" class="form-label">Buscar Productos:</label>
+            <div class="input-group">
+                <input type="text" id="busqueda" class="form-control">
+                <button id="buscarProductosBtn" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+        <div class="orden mb-4">
+            <label for="orden" class="form-label">Ordenar por:</label>
+            <select id="orden" class="form-select">
+                <option value="precioAscendente">Precio Ascendente</option>
+                <option value="precioDescendente">Precio Descendente</option>
+            </select>
+        </div>
+        <div class="catalogo" id="catalogo"></div>
+        <div class="row row-cols-1 row-cols-md-3" id="productosContainer"></div>
+
+    </div>
+    <div class="carrito mt-4">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito" class="list-group mb-3"></ul>
+        <p class="fw-bold">Total: $<span id="total-precio">0</span></p>
+        <button id="confirmarCompraBtn" onclick="confirmarCompra()" class="btn btn-success">Confirmar
+            Compra</button>
+    </div>
+    <button id="mostrarCatalogoBtn" onclick="mostrarCatalogo()" class="btn btn-primary mt-4">Mostrar
+        Catálogo</button>
+    </div>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="main.js"></script>
+</body>
+
+</html>
